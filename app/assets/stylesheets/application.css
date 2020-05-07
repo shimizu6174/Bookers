@@ -30,12 +30,27 @@ a {
   display: block;
   clear: both;
 }
-
-/* index */
-.index {
-    margin: 30px;
+.bold {
+	font-weight: bold;
+}
+.page-container {
+	margin: 30px;
+}
+.link-border {
+	text-decoration: underline;
 }
 
+
+/*top*/
+#top-title {
+	margin-bottom: 10px;
+}
+.top-text {
+	margin: 10px 20px;
+	font-size: 15px;
+}
+
+/* index */
 .page-title {
 	margin-bottom: 20px;
 }
@@ -50,5 +65,9 @@ a {
 	display: inline-block;
 	margin: 5px;
 }
+
+
+/* show */
+
 
 
