@@ -1,9 +1,24 @@
 
-<section class="show-container">
-	<h4 class="show-contant">Title:  </h4>
-	<%= @book.title %>
+<section class="page-container">
+
+	<p class="show-text">
+		<span class="bold">Title: </span>
+		<%= @book.title %>
+	</p>
+
+	<p class="show-text">
+		<span class="bold">Body: </span>
+		<%= @book.body %>
+	</p>
+
+	<p class="show-text">
+		<span class="underline">Edit</span> | 
+		<span class="underline">
+			<%= link_to "Back", books_path %>
+		</span>
+	</p>
+
 </section>
 
-<h4 class="show-headline">Body:  </h4>
 
 

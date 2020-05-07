@@ -36,7 +36,7 @@ a {
 .page-container {
 	margin: 30px;
 }
-.link-border {
+.underline {
 	text-decoration: underline;
 }
 
@@ -68,6 +68,8 @@ a {
 
 
 /* show */
-
-
+.show-text {
+	margin: 10px 20px;
+	font-size: 15px;
+}
 
