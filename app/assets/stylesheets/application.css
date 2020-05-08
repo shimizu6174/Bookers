@@ -39,6 +39,13 @@ a {
 .underline {
 	text-decoration: underline;
 }
+.errors {
+	width: 200px;
+	margin: 10px 0;
+	padding: 15px;
+	border: 2px solid red;
+	list-style: none;
+}
 
 
 /*top*/
@@ -68,6 +75,11 @@ a {
 
 
 /* show */
+.success-m {
+	margin: 10px 20px;
+	font-size: 15px;
+	color: green;
+}
 .show-text {
 	margin: 10px 20px;
 	font-size: 15px;

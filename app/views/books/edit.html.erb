@@ -2,21 +2,31 @@
 <div class="page-container">
 	<h2>Editing Book</h2>
 
-<%= form_for(@book) do |f| %>
-    <h5>title</h5>
-    <%= f.text_field :title %>
-    <h5>Body</h5>
-    <%= f.text_area :body %>
-    <%= f.submit 'Update Book' %>
+	<%= form_for(@book) do |f| %>
 
-    <p class="edit-text">
+	<% if flash[:error].present? %>
+	<ul class="errors">
+		<% flash[:error].each do |e| %>
+		<li><span class="error-text"><%= e %></span></li>
+		<% end %>
+	</ul>
+	<% end %>
+
+	<h5>title</h5>
+	<%= f.text_field :title %>
+	<h5>Body</h5>
+	<%= f.text_area :body %>
+	<p></p>
+	<%= f.submit 'Update Book' %>
+
+	<p class="edit-text">
 		<span class="underline">
-		    <%= link_to "Show", book_path(@book) %>
-	    </span>
+			<%= link_to "Show", book_path(@book) %>
+		</span>
 
-	     | <span class="underline">
+		| <span class="underline">
 			<%= link_to "Back", books_path %>
 		</span>
 	</p>
-<% end %>
+	<% end %>
 </div>

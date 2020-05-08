@@ -30,7 +30,7 @@
 
 			<td class="book-list">
 				<span class="underline">
-					<a class="book-link" href="#">Destroy</a>
+					<%= link_to "Destroy", book_path(book), method: :delete, data: { confirm: 'Are you sure?' } %>
 				</span>
 			</td>
 		</tr>
@@ -40,6 +40,14 @@
 	<h3 class="section-title">New Book</h3>
 
 	<%= form_for(@book) do |f| %>
+
+	<% if flash[:error].present? %>
+	<ul class="errors">
+		<% flash[:error].each do |e| %>
+		<li><span class="error-text"><%= e %></span></li>
+		<% end %>
+	</ul>
+	<% end %>
 
 	<h5>Title</h5>
 	<%= f.text_field :title %>
