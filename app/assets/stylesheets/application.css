@@ -46,6 +46,10 @@ a {
 	border: 2px solid red;
 	list-style: none;
 }
+.error-count {
+	color: red;
+	margin-bottom: 5px;
+}
 
 
 /*top*/
